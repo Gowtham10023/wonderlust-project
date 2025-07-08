@@ -69,7 +69,7 @@ resource "aws_security_group" "allow_user_to_connect" {
   }
 
   ingress {
-    description = "Redis"
+    description = "Redis Port"
     from_port   = 6379
     to_port     = 6379
     protocol    = "tcp"
@@ -85,7 +85,7 @@ resource "aws_security_group" "allow_user_to_connect" {
   }
 
   ingress {
-    description = "SMTP"
+    description = "SMTP Port"
     from_port   = 25
     to_port     = 25
     protocol    = "tcp"
